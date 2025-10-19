@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 
 export default function Navbar(){
 
-    const [darkmode, setDarkmode] = useState(false);
+    const [darkmode, setDarkmode] = useState(true);
     const [navOpen, setNavOpen] = useState(false);
 
     useEffect(() => {
@@ -24,7 +24,7 @@ export default function Navbar(){
     return(
         <nav className="w-full fixed top-0 left-0 bg-white dark:bg-gray-900 shadow-md z-50">
             <div className="flex justify-between max-w-7xl mx-auto px-4 py-3 items-center">
-                <h1 className="text-2xl font-bold text-blue-600 dark:text-blue-400">
+                <h1 className="text-3xl md:text-4xl font-bold text-blue-600 dark:text-blue-400">
                     Mozzes
                 </h1>
                 <ul className='md:flex space-x-6 hidden'>
@@ -37,10 +37,10 @@ export default function Navbar(){
                     ))}
                 </ul>
                 <div className='flex items-center space-x-4'>
-                    <button onClick={() => setDarkmode(!darkmode)}>
+                    <button className='text-2xl' onClick={() => setDarkmode(!darkmode)}>
                         {darkmode ? (<FaSun className='text-yellow-400'/>) : (<FaMoon className='text-gray-800'/>)}
                     </button>
-                    <button className='md:hidden' onClick={() => setNavOpen(!navOpen)}>
+                    <button className='md:hidden text-2xl' onClick={() => setNavOpen(!navOpen)}>
                         {navOpen ? (<FaTimes className="text-gray-800 dark:text-white"/>) : (<FaBars className="text-gray-800 dark:text-white"/>)}
                     </button>
                 </div>
