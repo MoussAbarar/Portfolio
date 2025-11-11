@@ -1,7 +1,7 @@
 import { Link } from 'react-scroll';
 import { motion } from "framer-motion";
 import ana from './images/ana-removebg-preview.png';
-import { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef} from 'react';
 
 export default function Hero(){
 
@@ -11,7 +11,7 @@ export default function Hero(){
     useEffect(() => {
         let write = setInterval(() => {
 
-            if(pair%2 == 0){
+            if(pair%2 === 0){
                 bar.current.style.opacity = '0';
             }else{
                 bar.current.style.opacity = '1';
@@ -21,7 +21,7 @@ export default function Hero(){
 
         return () => clearInterval(write);
 
-    }, [])
+    }, [pair])
 
     return(
         <section id='home' className="min-h-screen flex items-center justify-center bg-white dark:bg-gray-900 text-black dark:text-white px-4">
