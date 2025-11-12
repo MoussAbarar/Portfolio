@@ -38,7 +38,7 @@ export default function Navbar(){
                 </ul>
                 <div className='flex items-center space-x-4'>
                     <button className='text-2xl' onClick={() => setDarkmode(!darkmode)}>
-                        {darkmode ? (<FaSun className='text-yellow-400'/>) : (<FaMoon className='text-gray-800'/>)}
+                        {/*darkmode ? (<FaSun className='text-yellow-400'/>) : (<FaMoon className='text-gray-800'/>)*/}
                     </button>
                     <button className='md:hidden text-2xl' onClick={() => setNavOpen(!navOpen)}>
                         {navOpen ? (<FaTimes className="text-gray-800 dark:text-white"/>) : (<FaBars className="text-gray-800 dark:text-white"/>)}

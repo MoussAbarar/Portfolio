@@ -8,8 +8,8 @@ import Footer from "./components/footer";
 export default function App() {
   return (
     <div className="min-h-screen bg-white dark:bg-gray-900 text-black dark:text-white transition-colors duration-300">
-      <Navbar />
-      <Hero />
+      <Navbar/>
+      <Hero/>
       <About />
       <Projects />
       <Contact />
