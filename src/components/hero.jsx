@@ -25,9 +25,9 @@ export default function Hero(){
                     minWidth: 200.00,
                     scale: 1.00,
                     scaleMobile: 1.00,
-                    color: '#fff',
+                    color: '#1D4ED8',
                     backgroundColor: '#111827',
-                    points: 15.00,
+                    points: 20.00,
                     maxDistance: 2.00
                 })
             )
