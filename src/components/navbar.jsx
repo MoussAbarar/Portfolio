@@ -1,5 +1,5 @@
 import { Link } from 'react-scroll';
-import { FaMoon, FaSun, FaBars, FaTimes } from "react-icons/fa";
+import { /*FaMoon, FaSun, */FaBars, FaTimes } from "react-icons/fa";
 import { useEffect, useState } from 'react';
 
 export default function Navbar(){
