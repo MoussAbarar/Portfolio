@@ -1,7 +1,7 @@
 import { Link } from 'react-scroll';
 import { motion } from "framer-motion";
 //import ana from './images/ana-removebg-preview.png';
-import React, { useEffect, useRef, useState} from 'react';
+import { useEffect, useRef, useState} from 'react';
 import * as THREE from 'three';
 import NET from 'vanta/dist/vanta.net.min';
 
@@ -32,7 +32,7 @@ export default function Hero(){
                 })
             )
         }
-    })
+    }, [vantaEffect])
 
     useEffect(() => {
         let write = setInterval(() => {
